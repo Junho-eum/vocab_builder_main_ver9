@@ -234,7 +234,7 @@ function App() {
         {remainingQuestions.length === 1 && (
           <h2 style={{ textAlign: "center" }}>Last Question</h2>
         )}
-        <h3>Intermed-07/02</h3>
+        <h3>Intermed-08/01</h3>
         <p>Meaning: {vocabList[index].word}</p>
         <form onSubmit={(e) => e.preventDefault()}>
           <input
