@@ -175,10 +175,13 @@ function App() {
   React.useEffect(() => {
     const savedScores = localStorage.getItem("scoreList");
     if (savedScores) {
-      const sortedScores = JSON.parse(savedScores).sort((a, b) => b - a);
+      const sortedScores = JSON.parse(savedScores).sort(
+        (a, b) => b.score - a.score
+      );
       setScoreList(sortedScores);
     }
   }, []);
+
 
   const checkAnswer = () => {
     const isCorrect = inputValue === vocabList[index].synonym;
@@ -267,7 +270,11 @@ function App() {
   const handleFinish = () => {
     const shouldRecord = window.confirm("Do you want to record your score?");
     if (shouldRecord) {
-      const newScoreList = [...scoreList, score];
+      const currentDate = new Date();
+      const formattedDate = `${currentDate.getMonth() + 1}/${currentDate.getDate()}-${currentDate.getHours()}:${currentDate.getMinutes()}${currentDate.getHours() >= 12 ? "pm" : "am"}`;
+      const newScore = { score, timestamp: formattedDate };
+
+      const newScoreList = [...scoreList, newScore];
       setScoreList(newScoreList);
       localStorage.setItem("scoreList", JSON.stringify(newScoreList));
     }
@@ -309,7 +316,18 @@ function App() {
 
           <div style={{ position: "absolute", top: "40px", right: "10px" }}>
             {scoreList.map((s, index) => (
-              <div key={index}>Score: {s}</div>
+              <div key={index}>
+                Score: {s.score}{" "}
+                <span
+                  style={{
+                    marginLeft: "10px",
+                    fontSize: "0.9em",
+                    color: "grey",
+                  }}
+                >
+                  {s.timestamp}
+                </span>
+              </div>
             ))}
           </div>
         </form>
