@@ -50,6 +50,7 @@ body {
 .hint.show {
   opacity: 1;
   max-height: 50px; /* Adjust based on the expected size of the content */
+  color: black;
 }
 
 .score {
