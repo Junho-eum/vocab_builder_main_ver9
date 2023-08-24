@@ -18,142 +18,22 @@ function shuffle(array) {
 
 function App() {
   const vocabList = [
-    {
-      word: "coolness under strain",
-      synonym: "aplomb",
-      hint: "The ____ of the surgeon calmed the patient",
-    },
-    {
-      word: "intensely emotional",
-      synonym: "histrionic",
-      hint: "The ____ speech brought tears to the audience",
-    },
-    {
-      word: "quiet",
-      synonym: "taciturn",
-      hint: "While the CEO was ____ in public, he was a tyrant in private",
-    },
-    {
-      word: "규율에 엄격한/에프엠",
-      synonym: "martinet",
-      hint: "The ____ teacher was feared by all the students",
-    },
-    {
-     word: "부주의한/고의가 아닌",
-      synonym: "inadvertent",
-      hint: "The ____ mistake was overlooked by the boss",
-    },
-    {
-      word: "틀린생각을 바로잡다",
-      synonym: "disabuse",
-      hint: "The teacher tried to ____ the student of the notion that the earth is flat",
-    },
-    {
-      word: "lacking",
-      synonym: "wanting",
-      hint: "The ____ student was unable to pass the test",
-    },
-    {
-      word: "intimidate",
-      synonym: "cow",
-      hint: "The bully tried to ____ the smaller child",
-    },
-    {
-      word: "권위적인/위엄있는",
-      synonym: "magisterial",
-      hint: "The ____ boss was hated by all the employees",
-    },
-    {
-      word: "눈치챔/느낌",
-      synonym: "inkling",
-      hint: "I had an ____ that I had seen the movie before",
-    },
-    {
-      word: "prone to error",
-      synonym: "fallacious",
-      hint: "The ____ student was unable to pass the test",
-    },
+
     {
       word: "뻔뻔스러움",
       synonym: "effrontery",
       hint: "The ____ of the child was not tolerated by the teacher",
     },
     {
-      word: "shortage",
-      synonym: "dearth",
-      hint: "There was a ____ of food in the village",
+      word: "으르다/협박하다",
+      synonym: "browbeat",
+      hint: "The bully ____ the younger kids into giving him their lunch money",
     },
     {
-      word: "승인/찬성",
-      synonym: "approbation",
-      hint: "The ____ of the boss was appreciated by the employee",
+      word: "아이디어가 풍부한",
+      synonym: "fecund",
+      hint: "The ____ mind of the scientist was responsible for many inventions",
     },
-    {
-      word: "호전적인",
-      synonym: "bellicose",
-      hint: "The ____ attitude of the child was not tolerated by the teacher",
-    },
-    {
-      word: "광고하다",
-      synonym: "tout",
-      hint: "At the coference, the speaker ____ the benefits of the new product",
-    },
-    {
-      word: "가난한",
-      synonym: "penurious",
-      hint: "The ____ student was unable to pay for his lunch",
-    },
-    {
-      word: "심각한 범죄행위",
-      synonym: "enormity",
-      hint: "The ____ of the crime shocked the community",
-    },
-    {
-      word: "냉정한/침착한",
-      synonym: "phlegmatic",
-      hint: "The ____ attitude of the surgeon calmed the patient",
-    },
-    {
-      word: "곤혹/당혹",
-      synonym: "quandary",
-      hint: "The student was in a ____ about which college to attend",
-    },
-    {
-      word: "세련된/점잖은",
-      synonym: "urbane",
-      hint: "Maugham became the inspiration for the ____ and sophisticated characters in his novels",
-    },
-    {
-      word: "법률/계약을 폐지하다",
-      synonym: "rescind",
-      hint: "The government ____ the law",
-    },
-    {
-      word: "비통해하는",
-      synonym: "pine",
-      hint: "The child ____ for his dead grandmother",
-    },
-    {
-      word: "개선하다",
-      synonym: "ameliorate",
-      hint: "The doctor tried to ____ the patient's condition",
-    },
-    {
-      word: "말투/태도 거침",
-      synonym: "asperity",
-      hint: "The ____ of the boss was not appreciated by the employees",
-    },
-    {
-      word: "기운찬/위세있는/용기있는",
-      synonym: "mettlesome",
-      hint: "Seal Team Six is a ____ group of soldiers",
-    },
-    {
-      word: "기소하다",
-      synonym: "indict",
-      hint: "The prosecutor tried to ____ the suspect",
-    },
-    
       ];
   const [index, setIndex] = useState(0);
   const [inputValue, setInputValue] = useState("");
@@ -288,7 +168,7 @@ function App() {
         {remainingQuestions.length === 1 && (
           <h2 style={{ textAlign: "center" }}>Last Question</h2>
         )}
-        <h3>Intermed-07/01</h3>
+        <h3>Intermed-07/02</h3>
         <p>Meaning: {vocabList[index].word}</p>
         <form onSubmit={(e) => e.preventDefault()}>
           <input
