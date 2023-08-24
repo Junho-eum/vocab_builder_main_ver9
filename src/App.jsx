@@ -87,8 +87,38 @@ function App() {
       word: "showing approval",
       synonym: "approbation",
       hint: "The ____ of the boss was appreciated by the employee",
-    }
-  ];
+    },
+    {
+      word: "호전적인",
+      synonym: "bellicose",
+      hint: "The ____ attitude of the child was not tolerated by the teacher",
+    },
+    {
+      word: "광고하다",
+      synonym: "tout",
+      hint: "At the coference, the speaker ____ the benefits of the new product",
+    },
+    {
+      word: "가난한",
+      synonym: "penurious",
+      hint: "The ____ student was unable to pay for his lunch",
+    },
+    {
+      word: "심각한 범죄행위",
+      synonym: "enormity",
+      hint: "The ____ of the crime shocked the community",
+    },
+    {
+      word: "냉정한/침착한",
+      synonym: "phlegmatic",
+      hint: "The ____ attitude of the surgeon calmed the patient",
+    },
+    {
+      word: "곤혹/당혹",
+      synonym: "quandary",
+      hint: "The student was in a ____ about which college to attend",
+    },
+      ];
   const [index, setIndex] = useState(0);
   const [inputValue, setInputValue] = useState("");
   const [correctCount, setCorrectCount] = useState(0);
