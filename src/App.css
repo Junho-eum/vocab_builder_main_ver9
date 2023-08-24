@@ -52,7 +52,6 @@ body {
   opacity: 1;
   max-height: 50px; /* Adjust based on the expected size of the content */
   color: black;
-  font-size: 25px;
 }
 
 .score {
