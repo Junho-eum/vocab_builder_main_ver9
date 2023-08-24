@@ -1,0 +1,87 @@
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background: skyblue; /* Background color */
+  font-family: 'Russo One', sans-serif;
+}
+/* Enlarge the text */
+.vocab-section p,
+.vocab-section input,
+.vocab-section button {
+  font-size: 18px; /* Adjust as needed */
+}
+
+.progress-section {
+  max-width: 600px; /* Adjust as needed */
+  margin: 20px auto;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 20px;
+  background: white;
+}
+
+.progress {
+  height: 100%;
+  transition: width 0.5s ease; /* This line adds the animation */
+}
+
+.progress.correct {
+  background: green;
+}
+
+.progress.wrong {
+  background: red;
+}
+/* Hint Text */
+.hint {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 0.3s ease, max-height 0.3s ease; /* Adjust as desired */
+}
+
+.hint.show {
+  opacity: 1;
+  max-height: 50px; /* Adjust based on the expected size of the content */
+}
+
+.score {
+    font-weight: bold;
+    color: black;
+}
+
+.score.glow {
+    color: red;
+    text-shadow: 0 0 5px red;
+}
+
+
+.fade-in {
+    animation: fadeIn 1s ease-in-out forwards;
+    color: red;
+}
+.correct-answer {
+  color: red;
+  display: none;
+  /* ... any other styles ... */
+}
+
+.correct-answer.fade-in {
+  display: block;
+  animation: fadeIn 3s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
