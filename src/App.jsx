@@ -34,17 +34,17 @@ function App() {
       hint: "While the CEO was ____ in public, he was a tyrant in private",
     },
     {
-      word: "disciplinarian",
+      word: "규율에 엄격한/에프엠",
       synonym: "martinet",
       hint: "The ____ teacher was feared by all the students",
     },
     {
-     word: "unintentional",
+     word: "부주의한/고의가 아닌",
       synonym: "inadvertent",
       hint: "The ____ mistake was overlooked by the boss",
     },
     {
-      word: "lead one from error",
+      word: "틀린생각을 바로잡다",
       synonym: "disabuse",
       hint: "The teacher tried to ____ the student of the notion that the earth is flat",
     },
@@ -59,12 +59,12 @@ function App() {
       hint: "The bully tried to ____ the smaller child",
     },
     {
-      word: "domineering",
+      word: "권위적인/위엄있는",
       synonym: "magisterial",
       hint: "The ____ boss was hated by all the employees",
     },
     {
-      word: "vague sense",
+      word: "눈치챔/느낌",
       synonym: "inkling",
       hint: "I had an ____ that I had seen the movie before",
     },
@@ -74,7 +74,7 @@ function App() {
       hint: "The ____ student was unable to pass the test",
     },
     {
-      word: "cheeky behavior",
+      word: "뻔뻔스러움",
       synonym: "effrontery",
       hint: "The ____ of the child was not tolerated by the teacher",
     },
@@ -84,7 +84,7 @@ function App() {
       hint: "There was a ____ of food in the village",
     },
     {
-      word: "showing approval",
+      word: "승인/찬성",
       synonym: "approbation",
       hint: "The ____ of the boss was appreciated by the employee",
     },
@@ -118,6 +118,42 @@ function App() {
       synonym: "quandary",
       hint: "The student was in a ____ about which college to attend",
     },
+    {
+      word: "세련된/점잖은",
+      synonym: "urbane",
+      hint: "Maugham became the inspiration for the ____ and sophisticated characters in his novels",
+    },
+    {
+      word: "법률/계약을 폐지하다",
+      synonym: "rescind",
+      hint: "The government ____ the law",
+    },
+    {
+      word: "비통해하는",
+      synonym: "pine",
+      hint: "The child ____ for his dead grandmother",
+    },
+    {
+      word: "개선하다",
+      synonym: "ameliorate",
+      hint: "The doctor tried to ____ the patient's condition",
+    },
+    {
+      word: "말투/태도 거침",
+      synonym: "asperity",
+      hint: "The ____ of the boss was not appreciated by the employees",
+    },
+    {
+      word: "기운찬/위세있는/용기있는",
+      synonym: "mettlesome",
+      hint: "Seal Team Six is a ____ group of soldiers",
+    },
+    {
+      word: "기소하다",
+      synonym: "indict",
+      hint: "The prosecutor tried to ____ the suspect",
+    },
+    
       ];
   const [index, setIndex] = useState(0);
   const [inputValue, setInputValue] = useState("");
