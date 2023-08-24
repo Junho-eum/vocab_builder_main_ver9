@@ -13,7 +13,7 @@ body {
 .vocab-section input,
 .vocab-section button {
   font-size: 18px; /* Adjust as needed */
-  color: black;
+  color: yellow;
 }
 
 .progress-section {
