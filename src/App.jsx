@@ -99,6 +99,166 @@ function App() {
       synonym: "incense",
       hint: "The rude comment ____ed the teacher",
     },
+    {
+      word: "독실한[신성한] 체하는 (=self-righteous)",
+      synonym: "sanctimonious",
+      hint: "A ____ person pretends to be morally superior to others",
+    },
+    {
+      word: "지배력[영향력]을 행사할 수 있는 위치",
+      synonym: "ascendancy",
+      hint: "The king had ____ over his subjects",
+    },
+    {
+      word: "귀찮게[짜증나게] 하다 ",
+      synonym: "rile",
+      hint: "The loud music ____ed the neighbors",
+    },
+    {
+      word: "굽실거리다",
+      synonym: "kowtow",
+      hint: "The servant ____ed to the king",
+    },
+    {
+      word: "복잡한 시국, 난국",
+      synonym: "imbroglio",
+      hint: "The ____ was caused by the president's poor leadership",
+    },
+    {
+      word: "용납하지 않다",
+      synonym: "brook",
+      hint: "The teacher did not ____ cheating",
+    },
+    {
+      word: "(별 생각 없이·힘 안 들이고) 술술 하는, 안이한",
+      synonym: "facile",
+      hint: "The ____ student did not study for the test",
+    },
+    {
+      word: "(재산·권력 등에 대한) 탐욕",
+      synonym: "cupidity",
+      hint: "The businessman's ____ led him to commit fraud",
+    },
+    {
+      word: "겉치장, 허식",
+      synonym: "veneer",
+      hint: "The politician's ____ of honesty was not convincing",
+    },
+    {
+      word: "환등, 주마등처럼 스쳐 지나가는 장면",
+      synonym: "phantasmagorical",
+      hint: "The ____ scene was very frightening",
+    },
+    {
+      word: "존재하다 (=apply)",
+      synonym: "obtain",
+      hint: "The rule ____s to all students",
+    },
+    {
+      word: "(비밀을) 알려주다[누설하다]",
+      synonym: "divulge",
+      hint: "The spy ____ed the secret information",
+    },
+    {
+      word: "(책이나 기록에서 부적당한 부분을) 삭제하다",
+      synonym: "expurgate",
+      hint: "The book was ____ed because it contained inappropriate content",
+    },
+    {
+      word: "심각한 문제, 병폐 (=ill)",
+      synonym: "malady",
+      hint: "The ____ of the country was caused by the corrupt government",
+    },
+    {
+      word: "낙관적인, 자신감이 넘치는 (=optimistic)",
+      synonym: "sanguine",
+      hint: "The ____ student was confident that he would get an A on the test",
+    },
+    {
+      word: " 용기[결단력] 있는 (=brave)",
+      synonym: "plucky",
+      hint: "The ____ soldier was not afraid of the enemy",
+    },
+    {
+      word: "얼버무리다",
+      synonym: "hedge",
+      hint: "The politician ____ed when asked about his plans",
+    },
+    {
+      word: "(특히 인과관계에 있거나 다른 관련이 있는 일에) 수반되는",
+      synonym: "concomitant",
+      hint: "The ____ effect of the medicine was drowsiness",
+    },
+    {
+      word: "(느낌·경험이) 대리의[간접적인]",
+      synonym: "vicarious",
+      hint: "The student lived ____ly through his favorite character in the book",
+    },
+    {
+      word: "(흔히 과장되게) 고상한, 상류층의[인 체하는]",
+      synonym: "genteel",
+      hint: "A live orchestra gave the event a ____ atmosphere",
+    },
+    {
+      word: "(어쩔 줄 몰라서) 허둥대다[당황하다]",
+      synonym: "flounder",
+      hint: "The student ____ed when asked a difficult question",
+    },
+    {
+      word: "어리석음, 우둔",
+      synonym: "inanity",
+      hint: "The ____ of the student made him fail the test",
+    },
+    {
+      word: "(너무 오래되어) 재미없는, 시들한",
+      synonym: "hoary",
+      hint: "The ____ joke was not funny",
+    },
+    {
+      word: "숙독[정독]하다",
+      synonym: "peruse",
+      hint: "The student ____ed the textbook before the test",
+    },
+    {
+      word: "거만한, 오만한 (=arrogant)",
+      synonym: "haughty",
+      hint: "The ____ student thought he was better than everyone else",
+    },
+    {
+      word: "의문을 제기하다 (=challenge)",
+      synonym: "impugn",
+      hint: "The lawyer ____ed the witness's testimony",
+    },
+    {
+      word: "(곤경·불쾌한 일의) 일시적인 중단, 한숨 돌리기",
+      synonym: "respite",
+      hint: "The vacation was a welcome ____ from work",
+    },
+    {
+      word: "애가[비가]의",
+      synonym: "elegiac",
+      hint: "The ____ poem was about the death of a loved one",
+    },
+    {
+      word: "(경쟁·전쟁 등에서) 완파하다",
+      synonym: "vanquish",
+      hint: "The army ____ed the enemy",
+    },
+    {
+      word: "절정, 정점 ",
+      synonym: "acme",
+      hint: "The ____ of the concert was the fireworks show",
+    },
+    {
+      word: "상상력이 없는, 재미없는 (=unimaginative)",
+      synonym: "pedestrian",
+      hint: "The ____ movie was not interesting",
+    },
+    {
+      word: "아첨꾼, 알랑쇠",
+      synonym: "sycophant",
+      hint: "The ____ was always trying to please his boss",
+    },
 
   ];
   const [index, setIndex] = useState(0);
