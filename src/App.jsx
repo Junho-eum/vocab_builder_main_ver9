@@ -18,261 +18,86 @@ function shuffle(array) {
 
 function App() {
   const vocabList = [
-    {
-      word: "뻔뻔스러움",
-      synonym: "effrontery",
-      hint: "The ____ of the child was not tolerated by the teacher",
-    },
-    {
-      word: "으르다/협박하다",
-      synonym: "browbeat",
-      hint: "The bully ____ the younger kids into giving him their lunch money",
-    },
-    {
-      word: "아이디어가 풍부한",
-      synonym: "fecund",
-      hint: "The ____ mind of the scientist was responsible for many inventions",
-    },
-    {
-      word: "계약/조약을 폐지하다",
-      synonym: "rescind",
-      hint: "The company ____ the contract after the employee was found to be stealing",
-    },
-    {
-      word: "(어떤 것을 차지하기 위해) 다투다",
-      synonym: "vie",
-      hint: "The two companies ____ for the top spot in the market",
-    },
-    {
-      word: "(우스꽝스럽게) 야한",
-      synonym: "ribald",
-      hint: "The ____ joke made the children laugh",
-    },
-    {
-      word: "(특히 일을 하러) 이동해 다니는",
-      synonym: "peripatetic",
-      hint: "The ____ salesman traveled from town to town",
-    },
-    {
-      word: "(~에 화가 나서) 발끈하다",
-      synonym: "bristle",
-      sentence:
-        "As we discussed the issue, he ____ at my suggestion that he had been unfair",
-    },
-    {
-      word: "돈키호테식의/비현실적인",
-      synonym: "quixotic",
-      hint: "The ____ plan to build a bridge across the ocean was never going to work",
-    },
-    {
-      word: "단조로운/따분한",
-      synonym: "humdrum",
-      hint: "The ____ routine of the office worker was not exciting",
-    },
-    {
-      word: "완벽하게[완전하게] 하다",
-      synonym: "consummate",
-      hint: "The ____ gentleman was always polite and well-dressed",
-    },
-    {
-      word: " 뚱한, 시무룩한",
-      synonym: "sullen",
-      hint: "The ____ child refused to speak to his parents",
-    },
-    {
-      word: "무모한",
-      synonym: "foolhardy",
-      sentence: "It was ____ to go hiking in the mountains during the storm",
-    },
-    {
-      word: "호통치다, 욕설하다; 혹평하다",
-      synonym: "vituperate",
-      sentence: "The angry customer ____ the manager for the poor service",
-    },
-    {
-      word: "두 다리를 묶다",
-      synonym: "hobble",
-      sentence: "Bad weather ____ the rescue efforts",
-    },
-    {
-      word: "(특히 불길한) 예감 ",
-      synonym: "presentiment",
-      hint: "The ____ of the coming storm made the children nervous",
-    },
-    {
-      word: "꾸밈없는, 소박한",
-      synonym: "austere",
-      hint: "The ____ room was not very comfortable",
-    },
-    {
-      word: "입찰하다.",
-      synonym: "tender",
-      sentence: "The company ____ for the contract",
-    },
-    {
-      word: "상실감에 빠진",
-      synonym: "bereft",
-      hint: "The ____ child was very sad after losing his dog",
-    },
-    {
-      word: " 자기를 내세우지 않는",
-      synonym: "self-effacing",
-      sentence: "The most admirable people are often the most ____",
-    },
-    {
-      word: "(미술·문학·음악 등을 모르는) 교양 없는 사람",
-      synonym: "philistine",
-      hint: "The ____ did not appreciate the beauty of the painting",
-    },
-    {
-      word: "(때로 지나칠 정도로) 애지중지하다",
-      synonym: "cosseted",
-      hint: "The king and quen ____ their only child",
-    },
-    {
-      word: "과다 (=excess)",
-      synonym: "surfeit",
-      hint: "The ____ of food made the children sick",
-    },
-    {
-      word: "(좋지 못하거나 불법적인 일에) 연루된",
-      synonym: "complicit",
-      hint: "The ____ politician was forced to resign",
-    },
-    {
-      word: "성급한, 충동적인",
-      synonym: "impetuous",
-      hint: "The ____ child did not think before acting",
-    },
-    {
-      word: "해로운, 유해한",
-      synonym: "deleterious",
-      hint: "The ____ effects of smoking are well-known",
-    },
-    {
-      word: "곤혹, 당혹, 곤경",
-      synonym: "quandary",
-      sentence: "The company was in a ____ after the CEO resigned",
-    },
-    {
-      word: "미숙한, 풋내기인",
-      synonym: "callow",
-      hint: "The ____ child did not know how to behave in public",
-    },
-    {
-      word: "(…이 좋아/…에 빠져) 정신을 못 차리는",
-      synonym: "besotted",
-      hint: "The ____ couple could not keep their hands off each other",
-    },
-    {
-      word: "거지, 탁발 수도사",
-      synonym: "mendicant",
-      hint: "The ____ begged for money on the street",
-    },
-    {
-      word: "재기 넘치는, 아주 재미있는",
-      synonym: "scintillating",
-      hint: "The ____ conversation made the party enjoyable",
-    },
-    {
-      word: " 감상적인 (=sentimental)",
-      synonym: "maudlin",
-      hint: "The ____ movie made the audience cry",
-    },
-    {
-      word: "너무 신중한, 엄숙하고 지루한 ",
-      synonym: "ponderous",
-      hint: "The ____ speech put the audience to sleep",
-    },
+
     {
       word: "(두 국가·단체 사이의) 화해[관계 회복]",
       synonym: "rapprochement",
       hint: "The ____ between the two countries was a welcome change",
     },
     {
-      word: "두서없는, 산만한",
-      synonym: "discursive",
-      hint: "The ____ lecture was hard to follow",
-    },
-    {
-      word: "별로 관계가 없는",
-      synonym: "tangential",
-      hint: "The professor's ____ comments were not relevant to the topic",
-    },
-    {
-      word: "상대방의 비난에 맞서서 하는) 비난[맞대응]",
-      synonym: "recrimination",
-      hint: "The ____ between the two politicians was not productive",
-    },
-    {
-      word: "버릇없는, 무례한",
-      synonym: "insolent",
-      hint: "The ____ child was not well-liked by the other children",
-    },
-    {
-      word: "(먹고 살기에 턱없이 부족한) 아주 적은[얼마 안 되는] 돈",
-      synonym: "pittance",
-      hint: "The ____ the company paid its employees was not enough to live on",
-    },
-    {
-      word: " 미친 듯이 날뛰어",
-      synonym: "amok",
-      sentence: "He ran ____ through the streets",
-    },
-    {
-      word: "(은근히) 헐뜯는",
-      synonym: "snide",
-      hint: "The ____ comments made the child cry",
-    },
-    {
-      word: "말로 표현하기 어려운",
-      synonym: "ineffable",
-      hint: "The beauty of the sunset was ____",
-    },
-    {
-      word: "저속한, (도덕적으로) 지저분한",
-      synonym: "tawdry",
-      hint: "The ____ behavior of the politician was not well-received",
-    },
-    {
-      word: "선거구를 자기 당에 유리하게 변경하다",
-      synonym: "gerrymander",
-      sentence: "The politician ____ the district to ensure his reelection",
-    },
-    {
-      word: "(재산·세력 등을) 과시하는",
-      synonym: "ostentatious",
-      hint: "The ____ display of wealth was not appreciated by the guests",
-    },
-    {
-      word: "퉁명스럽게",
-      synonym: "brusquely",
-      hint: "The teacher ____ told the student to sit down",
-    },
-    {
-      word: "날씨가 험한, 거칠고 궂은, 무정한, 냉혹한",
-      synonym: "inclement",
-      hint: "The ____ weather made the trip unpleasant",
-    },
-    {
-      word: "(흐름을) 막다[저지하다]",
-      synonym: "stem",
-      sentence: "The police tried to ____ the flow of drugs into the country",
-    },
-    {
-      word: "변칙의, 이례적인",
-      synonym: "anomalous",
-      hint: "The ____ behavior of the child was not normal",
-    },
-    {
-      word: "부도덕한, 무원칙한 (=unprincipled),",
-      synonym: "unscrupulous",
-      hint: "The ____ politician was not trusted by the voters",
-    },
-    {
       word: "온건한 (=bland)",
       synonym: "anodyne",
       hint: "The ____ speech did not offend anyone",
+    },
+    {
+      word: "무기 없이 맨손으로 싸우는 게임 형태.",
+      synonym: "melee",
+      hint: "I became enraged and joined the ____",
+    },
+    {
+      word: "급성장[급증]하다",
+      synonym: "burgeon",
+      hint: "The city's population has ____ed in recent years",
+    },
+    {
+      word: "풍자하다",
+      synonym: "lampoon",
+      hint: "The politician was ____ed on the front page of the newspaper",
+    },
+    {
+      word: "일치하지 않는, 조화하지 않는, 앞뒤가 안 맞는",
+      synonym: "incongruous",
+      hint: "The ____ music was not appropriate for the event",
+    },
+    {
+      word: "멍청한, 얼빠진",
+      synonym: "vacuous",
+      hint: "The ____ student did not know the answer",
+    },
+    {
+      word: "잔인한, 사나운",
+      synonym: "fell",
+      hint: "The ____ dictator killed thousands of people",
+    },
+    {
+      word: "음탕한",
+      synonym: "lacivious",
+      hint: "He was fired for making ____ comments to his coworkers",
+    },
+    {
+      word: "순화[정화]시키다(purify), <의론 등을> 다듬다",
+      synonym: "rarefy",
+      hint: "Jacks vulgar language was ____ed after he had children",
+    },
+    {
+      word: "(특히 남성용) 의류의, 재봉[재단]의",
+      synonym: "sartorial",
+      hint: "The ____ style of the suit was very fashionable",
+    },
+    {
+      word: "궁핍한",
+      synonym: "indigent",
+      hint: "The ____ family could not afford to buy food",
+    },
+    {
+      word: "변화무쌍한",
+      synonym: "protean",
+      hint: "The ____ actor could play any role",
+    },
+    {
+      word: "막을 내리다, 클라이맥스에 이르다",
+      synonym: "culminate",
+      hint: "The concert ____ed with a fireworks show",
+    },
+    {
+      word: "선언[선포]하다 (=declare)",
+      synonym: "proclaim",
+      hint: "The president ____ed that the war was over",
+    },
+    {
+      word: "몹시 화나게[격분하게] 하다",
+      synonym: "incense",
+      hint: "The rude comment ____ed the teacher",
     },
 
   ];
